@@ -74,6 +74,7 @@
     margin-top: 0;
     background-color: #fc8e01;
     overflow: hidden;
+    height: 100vh;
 }
 .img2{
     display: flex;
