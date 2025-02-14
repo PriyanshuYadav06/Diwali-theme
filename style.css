@@ -6,6 +6,7 @@
 .main1{
     height: 100vh;
     overflow: hidden;
+    /* display: none; */
 }
 .bg-image{
     width: 100%;
@@ -22,7 +23,7 @@
     top:0;
 }
 .text{
-    font-family: Salsa;
+    font-family: 'Salsa';
     position:absolute;
     font-weight:400;
     font-size:2.3vw;
@@ -32,11 +33,13 @@
     padding: 20px;
     scale:1.3;
     /* display: none; */
+    z-index: 2;
 }
 .audio::-webkit-media-controls-panel {
     background-color: rgba(255, 166, 0, 0.39);
 }
 .audio{
+
     margin-top:0.5vw;
     height:4vh;
     width:23vw;
@@ -57,6 +60,7 @@
     justify-content: center;
     gap:1vw;
     padding: 1rem;
+    background-color: #fc8e01;
 }
 .circle{
     width: 10px;
@@ -71,10 +75,12 @@
     height: 0.3rem;
 }
 .main2{
-    margin-top: 0;
+    /* margin-top:80px; */
     background-color: #fc8e01;
     overflow: hidden;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
 }
 .img2{
     display: flex;
@@ -84,15 +90,102 @@
     flex-direction: column;
 }
 .img2 img{
-    width:75%;
+    width:50%;
 }
 .img2 p{
     color: #1E1E1E;
     font-weight: 400;
     font-size:4vw;
-    padding:1vw;
+    padding:0.1vw;
     font-family: 'Style Script', cursive;
 }
+.box{
+    width:30vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+    padding:2vw;
+    border-radius:30px;
+    margin:5vw;;
+}
+.box p{
+    font-family: 'Salsa';
+    font-size:30px;
+    font-weight:400;
+   
+}
+.main3{
+    background-color: #fc8e01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.main3 img{
+    width:15%;
+    position: absolute;
+    left:61vw;
+}
+.main4{
+    background-color:#fc8e01;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius: 15px;
+    width:70%;
+    /* overflow: hidden; */
+    padding: 25px;
+
+}
+.final img{
+    width:50%;
+}
+.diwali{
+    font-family: 'salsa';
+    font-weight: 400;
+    font-size:2vw;
+    margin-top: 5px;
+}
+.Thank{
+    font-family: 'Style Script', cursive;
+    font-weight: 400;
+    font-size:5vw;
+}
+.final-text{
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+    position: relative;
+    /* background-color: #1E1E1E; */
+    left:164px;
+    top:16px;
+}
+footer{
+    background-color: #fc8e01;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+footer span{
+   margin-right:25px;
+   font-family: 'salsa';
+   font-size:0.8vw;
+   
+}
+
 @media (width<1092px){
     .jhalar{
         width:25vw;
@@ -105,6 +198,18 @@
         margin-top: 0.9vw;
         width:28vw;
     }
+    .box p{
+       
+        font-size:25px;
+        
+       
+    }
+}
+@media (width<966px) {
+    .box p{
+        font-size:20px; 
+    }
+    
 }
 @media (width<754px){
     .text{
@@ -118,7 +223,40 @@
         width:35vw;
     }
 }
+@media (width<772px){
+        .box p{
+            font-size:18px;  
+        }
+        .main3 img{
+            width:18%;
+            left:61vw;
+        }
+}
+@media (width<600px){
+    .box p{
+        font-size:15px;  
+    }
+    .main3 img{
+        width:18%;
+        left:61vw;
+    }
+    .final-text{
+        left:2px;
+    }
 
+}
+@media (width<500px){
+    .box{
+        width:40%;
+    }
+    .box p{
+        font-size:12px;  
+    }
+    .main3 img{
+        width:20%;
+        left:64vw;
+    }
+}
 @media (width<500px) {
     .bg-image{
         display: none;
